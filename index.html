@@ -10,61 +10,113 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,900;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,900;1,200&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.1.0/dist/lottie-player.js"></script>
+
 </head>
 
 <body>
+
     <div class="container">
-
-        <div class="card-white">
-            <h1>Hola, I'm Denny</h1>
-            <h2>Junior full stack dev</h2>
-            <img src="/profile/images/Denny-Juliette-02.png" class="img-circle" width="100px" alt="Denny Juliette">
+        <div id="background-gradient">
+            <div id="header">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://github.com/Denny1803" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100090523180707" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mu.linkedin.com/in/denny-juliette-158365129" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-01">
+                <div class="text-box">
+                    <h1>About Me</h1>
+                    <div id="text-to-animate"></div>
+                    <!-- <p class="accroche">"Experienced full stack developer skilled in multiple web technologies and
+                frameworks."
+            </p> -->
+                </div>
+                <div class="image-box">
+                    <img src="/images/Denny-Juliette-det.png" class="" width="500px" alt="Denny Juliette">
+                </div>
+            </div>
         </div>
 
-        <div id="introduction" class="card-white">
-            <p>
-                Working as infographiste at beyond communications. Learning code to master website devs. I am planning
-                to be a full stack developer in the future.
-            </p>
+        <div class="section-02">
+            <div id="card-01" class="card-white">
+                <lottie-player src="animation/design-animations.json" background="transparent" speed="1"
+                    style="width: 15vw; height: 15vw;" loop autoplay></lottie-player>
+                <h3>
+                    Actual Job
+                </h3>
+                <p>
+                    I currently work as an infographiste at Beyond Communications, where I bring my creative skills to
+                    the team. In addition to my design work, I am also learning how to code in order to expand my skill
+                    set and become proficient in website development. My goal is to eventually become a full stack
+                    developer, and I am excited about the learning journey ahead.
+                </p>
+            </div>
 
-            <a href="#" class="btn-yellow">Discover Le Wagon</a>
-        </div>
+            <div id="card-02" class="card-white">
+                <h3>Summary</h3>
+                <p>
+                    With almost 17 years of extensive experience in the "Prepress" industry, I have gained the necessary
+                    skills and knowledge to successfully complete assignments on time while diligently adhering to
+                    established rules and processes. My primary responsibilities typically involve efficient and
+                    accurate page layout creation using templates that have been created by designers, including a wide
+                    variety of formats such as newsletters, annual reports, books, posters, and packaging designs.
+                    Furthermore, my solid expertise in JavaScript programming enables me to effectively automate
+                    workflows and greatly streamline repetitive tasks that may arise in my work.
+                </p>
+            </div>
 
-        <div  class="card-white">
-            <h2>Summary</h2>
-            <p>
-                With nearly 14 years experience in the ‘Prepress’ sector, I have aquired skills
-                and knowledge which allows me to deliver work given in time while respecting
-                the rules and processes in force. My work consist mainly of doing page layout
-                with given template done by the designers, namely newsletter, annual report,
-                books, posters, packaging and rezise of certain template, books. I also have
-                skills in javascript programming which is helpful in automating workflows and
-                repetitive aspect of my work.
-            </p>
-        </div>
+            <div id="card-03" class="card-white">
+                <div id="rainbow-text" class="animate">THINK TWICE</div>
+                <div class="code-once">KODE ONCE!</div>
+                <div class="lottie-container">
+                    <lottie-player src="animation/Business idea.json" background="transparent" speed="1" loop
+                        autoplay></lottie-player>
+                </div>
+            </div>
 
-        <div class="card-white">
-            <h2>Follow me</h2>
-            <ul class="list-inline">
-                <li>
-                    <a href="https://github.com/Denny1803" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100090523180707" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://mu.linkedin.com/in/denny-juliette-158365129" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
+            <div id="card-04" class="card-white">
+                <h3>EDUCATION</h3>
+                <h4>HIGH SCHOOL</h4>
+                <p>Up to HSC<br>
+                    College de la Confiance</p>
+                <h4>UNIVERSITY</h4>
+                <p>Mahatma Gandhi Institute <br>
+                    Diploma in fine Arts <br>
+                    2002 - 2005</p>
+            </div>
         </div>
+        <div class="section-03 sliding-container"></div>
+        <div class="slide-in">
+            <div class="sliding-item">
+                <h2>Slide 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="sliding-item">
+                <h2>Slide 2</h2>
+                <p>Nullam gravida nisl sit amet risus rutrum dignissim.</p>
+              </div>
+              <div class="sliding-item">
+                <h2>Slide 3</h2>
+                <p>Suspendisse sed ex blandit, imperdiet mauris in, ultricies mauris.</p>
+              </div>
     </div>
+    <script src="animation.js"></script>
 
 </body>
 
