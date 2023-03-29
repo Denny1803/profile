@@ -42,8 +42,20 @@ body {
   display: flex;
   height: 10vh;
   align-items: center;
-  justify-content: right;
-  padding: 0 20% ;
+  justify-content: space-between;
+  padding: 0 15% ;
+  animation-delay: 5s;
+}
+
+.display_none {
+  display: none;
+}
+.my-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color:  #e2cd11;
+  font-weight: 100;
 }
 
   h1, h2, h3 {
@@ -248,7 +260,26 @@ body {
   transform: translateX(-100%);
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* optional: add a transition effect */
+}
 
+.fade-in-visible {
+  opacity: 1;
+  /* additional styling here */
+}
+
+@keyframes fade-in-h {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-header {
+  opacity: 0;
+  animation: fade-in-h 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
 
 .lottie-container {
   display: flex;
